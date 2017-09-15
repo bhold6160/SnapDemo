@@ -19,7 +19,7 @@ public abstract class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mRoot = inflater.inflate(getLayoutResId, container, false);
+        mRoot = inflater.inflate(getLayoutResId(), container, false);
         inOnCreateView(mRoot, container, savedInstanceState);
         return mRoot;
     }

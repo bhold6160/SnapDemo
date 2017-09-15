@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.brandonholderman.snapdemo.adapter.MainPagerAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         View background = findViewById(R.id.am_background_view);
         ViewPager viewPager = (ViewPager) findViewById(R.id.am_view_pager);
-        ViewPager.setAdapter();
+        MainPagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
     }
 }
