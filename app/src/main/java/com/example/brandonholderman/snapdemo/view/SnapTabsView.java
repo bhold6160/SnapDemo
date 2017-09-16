@@ -42,10 +42,10 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
     public void init() {
         LayoutInflater.from(getContext()).inflate(R.layout.view_snap_tabs, this, false);
 
-        mCenterImage = (ImageView) findViewById(R.id.vst_center_image);
-        mStartImage = (ImageView) findViewById(R.id.vst_start_image);
-        mEndImage = (ImageView) findViewById(R.id.vst_end_image);
-        mBottomImage = (ImageView) findViewById(R.id.vst_bottom_image);
+        mCenterImage = findViewById(R.id.vst_center_image);
+        mStartImage = findViewById(R.id.vst_start_image);
+        mEndImage = findViewById(R.id.vst_end_image);
+        mBottomImage = findViewById(R.id.vst_bottom_image);
 
         mIndicator = findViewById(R.id.vst_indicator);
     }
