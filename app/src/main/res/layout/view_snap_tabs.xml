@@ -6,14 +6,14 @@
     android:layout_height="184dp"
     tools:layout_gravity="bottom"
     tools:background="@color/light_purple">
-    
+
     <ImageView
         android:id="@+id/vst_center_image"
         android:layout_width="88dp"
         android:layout_height="88dp"
         android:layout_gravity="center|bottom"
-        android:background="@color/black"
-        android:layout_marginBottom="96dp"/>
+        android:layout_marginBottom="96dp"
+        android:src="@drawable/large_circle"/>
     
     <ImageView
         android:id="@+id/vst_start_image"
@@ -22,7 +22,7 @@
         android:layout_marginBottom="56dp"
         android:layout_marginStart="24dp"
         android:layout_gravity="start|bottom"
-        android:background="@color/black"/>
+        android:src="@drawable/ic_chat_bubble_24dp"/>
 
     <ImageView
         android:id="@+id/vst_end_image"
@@ -31,7 +31,7 @@
         android:layout_marginBottom="56dp"
         android:layout_marginEnd="24dp"
         android:layout_gravity="end|bottom"
-        android:background="@color/black"/>
+        android:src="@drawable/ic_group_work_24dp"/>
 
     <ImageView
         android:id="@+id/vst_bottom_image"
@@ -39,14 +39,14 @@
         android:layout_height="32dp"
         android:layout_marginBottom="48dp"
         android:layout_gravity="center|bottom"
-        android:background="@color/black"/>
+        android:src="@drawable/small_circle"/>
     
     <View
         android:id="@+id/vst_indicator"
         android:layout_width="48dp"
         android:layout_height="4dp"
         android:layout_gravity="bottom|center"
-        android:background="@color/black"
+        android:background="@drawable/indicator_background"
         android:layout_marginBottom="44dp"/>
 
 </FrameLayout>
