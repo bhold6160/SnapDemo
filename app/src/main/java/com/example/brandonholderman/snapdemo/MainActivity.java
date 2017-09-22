@@ -6,8 +6,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import com.example.brandonholderman.snapdemo.view.SnapTabsView;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
+import com.example.brandonholderman.snapdemo.view.SnapTabsView;
 import com.example.brandonholderman.snapdemo.adapter.MainPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,11 +24,7 @@ public class MainActivity extends AppCompatActivity {
         MainPagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
-//        mViewPager.setAdapter(new MainViewAdapter(getFragmentManager()));
-//        tabsView.setViewPager(mViewPager);
-//        mViewPager.setCurrentItem(1);
-
-        SnapTabsView tabsView = (SnapTabsView) findViewById(R.id.am_snap_tabs);
+//        SnapTabsView tabsView = (SnapTabsView) findViewById(R.id.am_snap_tabs);
 
         final int colorBlue = ContextCompat.getColor(this, R.color.light_blue);
         final int colorPurple = ContextCompat.getColor(this, R.color.light_purple);
