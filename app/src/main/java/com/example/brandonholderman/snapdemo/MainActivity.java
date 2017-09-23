@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         MainPagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
-//        SnapTabsView tabsView = (SnapTabsView) findViewById(R.id.am_snap_tabs);
+        SnapTabsView snapTabsView = (SnapTabsView) findViewById(R.id.am_snap_tabs);
+        snapTabsView.setupWithViewPager(viewPager);
+
+        viewPager.setCurrentItem(1);
 
         final int colorBlue = ContextCompat.getColor(this, R.color.light_blue);
         final int colorPurple = ContextCompat.getColor(this, R.color.light_purple);
